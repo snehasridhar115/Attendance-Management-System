@@ -1,0 +1,66 @@
+body {
+	background: #0b3b69;
+	font-family: arial;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+h1, p, form, input, div, label {
+	padding: 0;
+	margin: 0;
+}
+.container {
+	overflow: hidden;
+}
+.requestForm {
+	margin: 1em auto 0 auto;
+	width: 22.8em;
+	height: 25em;
+}
+header h1 {
+	color: rgba(240,240,240,1);
+	font-family: 'black_jackregular';
+	font-weight: bold;
+	font-size: 8em;
+	font-variant: small-caps;
+	line-height: 1.5;
+	padding: 0.2em 0 0 0;
+	height: 1.5em;
+	width: 100%;
+	text-align: center;
+}
+input {
+	background: rgba(228,232,243, 0.8);
+	border: none;
+	color: rgba(80,80,80,1);
+	width: 25em;
+	height: 1.5em;
+	outline: none;
+}
+input:hover {
+	background-color: rgba(255,255,255, 0.8);
+}
+input:focus {
+	background-color: rgba(255,255,255, 0.8);
+}
+label {
+	color: rgba(220,220,220,1);
+}
+.submit {
+	background: rgba(35,35,35, 0.6);
+	color: rgba(220,220,220,1);
+	padding: 0 0 0 0;
+	margin: 2.5em 0 0 7em;
+	width: 10em;
+	text-transform: uppercase;
+	cursor: pointer;
+	-webkit-transition: background 0.4s;
+	transition: background 0.4s;
+}
+.submit:hover {
+	background: rgba(223,32,77, 0.8);
+}
+.submit:focus {
+	background: rgba(223,32,77, 0.8);
+}
