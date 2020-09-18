@@ -1,8 +1,7 @@
 function formValidation() {
-// Make quick references to our fields.
 var username = document.getElementById('username');
 var password = document.getElementById('password');
-if (textAlphanumeric(username, "* For username please use numbers and letters *")) {
+if (textAlphanumeric(username, "* Invalid username *")) {
 if (lengthDefine(password, 5, 12)) {
 return true;
 }
@@ -10,7 +9,7 @@ return true;
 return false;
 }
 function textAlphanumeric(inputtext, alertMsg) {
-var alphaExp = /^[0-9a-zA-Z]+$/;
+var alphaExp = /^[0-9a-zA-Z.]+$/;
 if (inputtext.value.match(alphaExp)) {
 return true;
 } else {

@@ -4,8 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
 		<title>Request form</title>
-		<link rel="stylesheet" type="text/css" href="mystyle.css">
-		<script src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
 	    <div id="form">
@@ -14,13 +13,13 @@
 			<header>
 				<h1>Request Form</h1>
 			</header>
-			<div class="requestForm">
-				<form  onsubmit='return Validation()' method="POST" action="#">
-                    <label>Date Of Abscence</label>
+			<div class="theForms">
+				<form method="POST" action="#">
+                    <label>Date</label>
 					<input id="abs" class="abs" type="date" name="abs" required>
 					<p id="p5"></p> <br>
-                    <label>Period</label>
-					<select name="period" id="period">
+                    <label>Number of the Period</label>
+					<select required name="period" id="period" class="period">
                         <option>Please Choose</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -30,27 +29,27 @@
                         <option value="6">6</option>
                     </select>
 					<p id="p6"></p> <br>
-                    <label>Faculty Name:</label>
-                    <select name="faculty" id="faculty">
+                    <label>Name of the Faculty</label>
+                    <select required name="faculty" id="faculty" class="faculty">
                         <option>Please Choose</option>
                         <option value="dr">Vamsi</option>
                         <option value="ns">Radhika</option>
-                        <option value="ss">Shanmuga Priya</option>
-                        <option value="ar">Arun Kumar</option>
+                        <option value="ss">Priya</option>
+                        <option value="ar">Arun</option>
                     </select><br><br>
-                    <label for="leave">Choose type of leave:</label>
-                    <select name="leave" id="leave">
+                    <label for="leave">Choose the type of leave</label>
+                    <select required name="leave" id="leave" class="leave">
                         <option>Please Choose</option>
                         <option value="ML">Medical Leave</option>
                         <option value="OD">On Duty</option>
                         <option value="Other">Other</option>
                     </select>
                     <p id="p7"></p>
-                    <br> <br> <br>
-                    <label>State Your Reason for leave:</label>
+                    <br>
+                    <label>State Your Reason for Leave</label>
 					<input id="reason" class="reason" type="text" name="reason" required><br>
                     <p id="p8"></p> <br>
-					<input id="submit" class="submit" type="submit" name="submit" value="Submit">
+					<input type="submit" class="submit" name="submit" value="Submit"/>
 				</form>
 			</div>
 		</div>
